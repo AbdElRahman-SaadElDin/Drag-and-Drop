@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag Ad Drop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <form id="form">
+      <input type="text" placeholder="Enter Project Name" id="textVal" />
+      <button class="add-project-btn" type="submit">ADD</button>
+    </form>
+    <section class="container" id="container">
+      <div class="inProgress">
+        <h2 class="h2-style gold">In Progress</h2>
+        <ul class="tasksSection" data-type="progress"></ul>
+      </div>
+      <div class="onHold">
+        <h2 class="h2-style red">On Hold</h2>
+        <ul class="tasksSection" data-type="hold"></ul>
+      </div>
+      <div class="review">
+        <h2 class="h2-style blue">In Review</h2>
+        <ul class="tasksSection" data-type="review"></ul>
+      </div>
+      <div class="approved">
+        <h2 class="h2-style green">Approved</h2>
+        <ul class="tasksSection" data-type="approved"></ul>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
